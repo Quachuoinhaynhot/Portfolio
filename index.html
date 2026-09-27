@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vu Hong Lam | AI Engineer Portfolio</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="logo">Vu Hong Lam</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home / Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <h1>Hi, I'm <span class="highlight">Vu Hong Lam</span></h1>
+        <p class="subtitle">AI Engineer &mdash; Deep Learning · Computer Vision · NLP</p>
+        <p class="hero-text">
+          Building practical, scalable AI solutions with real-world impact.
+          Currently exploring Machine Learning, Computer Vision, and Generative AI.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm an AI enthusiast currently studying Artificial Intelligence at
+              FPT University, Ha Noi (2024&ndash;2027). My goal is to develop
+              practical, scalable AI solutions that serve a wide audience, with
+              a focus on Deep Learning, Computer Vision, and NLP.
+            </p>
+            <p>
+              I enjoy working in high-tech, collaborative environments where I
+              can keep learning while contributing to projects with a clear
+              social impact.
+            </p>
+            <ul class="about-facts">
+              <li><strong>Location:</strong> Son Tay Town, Ha Noi</li>
+              <li><strong>Education:</strong> Artificial Intelligence, FPT University (2024&ndash;2027)</li>
+              <li><strong>Email:</strong> once3829@gmail.com</li>
+              <li><strong>Phone:</strong> 0865 289 839</li>
+            </ul>
+          </div>
+          <div class="about-highlights">
+            <img
+              class="profile-photo"
+              src="images/profile.jpg"
+              alt="Profile photo of Vu Hong Lam"
+            />
+
+          </div>
+            <div class="highlight-card">
+              <h3>Certifications</h3>
+              <ul>
+                <li>IELTS 6.0 &mdash; 2023</li>
+                <li>50% Scholarship, FPT University &mdash; 2024</li>
+                <li>Good Intern Award, FPT Software &mdash; 2027</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <!-- Filter Controls -->
+        <div class="filter-bar" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ml">Machine Learning</button>
+          <button class="filter-btn" data-filter="cv">Computer Vision</button>
+          <button class="filter-btn" data-filter="nlp">NLP / GenAI</button>
+          <button class="filter-btn" data-filter="web">Web App</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project cards are injected by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Machine Learning</h3>
+            <p>Linear Regression, SVM, Decision Trees, XGBoost</p>
+          </div>
+          <div class="skill-card">
+            <h3>Deep Learning</h3>
+            <p>CNN, RNN, Transformers</p>
+          </div>
+          <div class="skill-card">
+            <h3>Programming</h3>
+            <p>Python (NumPy, pandas, scikit-learn, matplotlib)</p>
+          </div>
+          <div class="skill-card">
+            <h3>Databases</h3>
+            <p>MySQL, SQL Server</p>
+          </div>
+          <div class="skill-card">
+            <h3>Computer Vision</h3>
+            <p>OpenCV, Haar Cascade, CLAHE, Gaussian Blur</p>
+          </div>
+          <div class="skill-card">
+            <h3>NLP / GenAI</h3>
+            <p>DistilBERT, RAG, LLM integration</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="contact-intro">Interested in working together or have a question? Reach out below.</p>
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:once3829@gmail.com">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">once3829@gmail.com</span>
+          </a>
+          <a class="contact-card" href="tel:0865289839">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">0865 289 839</span>
+          </a>
+          <div class="contact-card">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Son Tay Town, Ha Noi</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Vu Hong Lam. All rights reserved.</p>
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" id="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close project details">&times;</button>
+      <h3 id="modalTitle"></h3>
+      <p class="modal-category" id="modalCategory"></p>
+      <p id="modalDescription"></p>
+      <div id="modalDetails"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
